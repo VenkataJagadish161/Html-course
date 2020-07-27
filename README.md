@@ -1,37 +1,286 @@
-## Welcome to GitHub Pages
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Module-2 assignment</title>
+	<style>
+    * {
+	box-sizing: border-box; /*This is important, since content-box is the default one, the default browse style keeps 8px away from the browser window */
+}
+.row {
+	width: 100%;
+}
 
-You can use the [editor on GitHub](https://github.com/VenkataJagadish161/Html-course/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+/* ---------  <for small size screens like a mobile phone ---------------- */
+@media (max-width: 767px) {
+	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,
+	.col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+		float: left;
+	}
+	.col-sm-1 {
+		width: 8.33%;
+	}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+	.col-sm-2 {
+		width: 16.66%;
+	}
 
-### Markdown
+	.col-sm-3 {
+		width: 25%;
+	}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+	.col-sm-4 {
+		width: 33.33%;
+	}
 
-```markdown
-Syntax highlighted code block
+	.col-sm-5 {
+		width: 41.66%;
+	}
 
-# Header 1
-## Header 2
-### Header 3
+	.col-sm-6 {
+		width: 50.00%;
+	}
 
-- Bulleted
-- List
+	.col-sm-7 {
+		width: 58.33%;
+	}
 
-1. Numbered
-2. List
+	.col-sm-8 {
+		width: 66.66%;
+	}
 
-**Bold** and _Italic_ and `Code` text
+	.col-sm-9 {
+		width: 75%;
+	}
 
-[Link](url) and ![Image](src)
-```
+	.col-sm-10 {
+		width: 83.33%%
+	}
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+	.col-sm-11 {
+		width: 91.66%;
+	}
 
-### Jekyll Themes
+	.col-sm-12 {
+		width: 100%;
+	}
+}
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/VenkataJagadish161/Html-course/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+/* ----------------------------------------------------------------------------*/
+/* For medium-sized windows*/
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+@media (min-width: 768px) and (max-width: 991px){
+	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
+	.col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+		float: left;
+	}
+
+	.col-md-1 {
+		width: 8.33%;
+	}
+
+	.col-md-2 {
+		width: 16.66%;
+	}
+
+	.col-md-3 {
+		width: 25%;
+	}
+
+	.col-md-4 {
+		width: 33.33%;
+	}
+
+	.col-md-5 {
+		width: 41.66%;
+	}
+
+	.col-md-6 {
+		width: 50.00%;
+	}
+
+	.col-md-7 {
+		width: 58.33%;
+	}
+
+	.col-md-8 {
+		width: 66.66%;
+	}
+
+	.col-md-9 {
+		width: 75%;
+	}
+
+	.col-md-10 {
+		width: 83.33%%
+	}
+
+	.col-md-11 {
+		width: 91.66%;
+	}
+
+	.col-md-12 {
+		width: 100%;
+	}
+}
+
+/* ------------------------------------------------------------------- */
+/* for large-sized screens*/
+@media (min-width: 992px) {
+	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6,
+	.col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+		float: left;
+	}
+	.col-lg-1 {
+		width: 8.33%;
+	}
+
+	.col-lg-2 {
+		width: 16.66%;
+	}
+
+	.col-lg-3 {
+		width: 25%;
+	}
+
+	.col-lg-4 {
+		width: 33.33%;
+	}
+
+	.col-lg-5 {
+		width: 41.66%;
+	}
+
+	.col-lg-6 {
+		width: 50.00%;
+	}
+
+	.col-lg-7 {
+		width: 58.33%;
+	}
+
+	.col-lg-8 {
+		width: 66.66%;
+	}
+
+	.col-lg-9 {
+		width: 75%;
+	}
+
+	.col-lg-10 {
+		width: 83.33%;
+	}
+
+	.col-lg-11 {
+		width: 91.66%;
+	}
+
+	.col-lg-12 {
+		width: 100%;
+	}
+}
+
+body{
+  font-family: 'Lato', sans-serif;  
+}
+
+section {
+	position: relative;
+	margin: 20px;
+}
+
+section > h2 {
+	position: absolute;
+	margin-top: 0px;
+	top: 0px;
+	right: 0px;
+	width: 200px;
+	text-align: center;
+}
+
+section > p {
+	padding: 50px 10px 10px 10px;
+}
+
+div > h1 {
+	width: 100%;
+	text-align: center;
+	font-size: 175%;
+}
+
+h2 {
+	font-size: 125%;
+}
+
+section, section > h2 {
+	border: 1px solid black;
+}
+
+.row {
+
+}
+
+#section-1 {
+	background-color: #999999;
+}
+
+#section-2 {
+	background-color: #999999;
+}
+
+#section-3 {
+	background-color: #999999;
+}
+
+#section-1 > h2 {
+	background-color: #D59898;
+}
+
+#section-2 > h2 {
+	background-color: #C14543;
+}
+
+#section-3 > h2 {
+	background-color: #E5D198;
+}
+  </style>
+</head>
+<body>
+	<div>
+		<h1>Our Menu</h1>
+	</div>
+	<div class="row">
+		<div class="col-sm-12 col-md-6 col-lg-4">
+			<section id="section-1">
+				<h2>
+					Chicken
+				</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at congue urna, sit amet malesuada elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec suscipit ultricies rhoncus. Aenean sapien magna, euismod ornare metus eu, accumsan scelerisque tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus pretium lorem quis nisi dignissim, ac malesuada mauris consequat. Phasellus volutpat eu risus eget porttitor. Cras quis urna quam. Mauris sed placerat lectus, in luctus magna. Integer sagittis sollicitudin cursus. Nullam eu ultrices tortor.
+				</p>
+			</section>
+		</div>
+		<div class="col-sm-12 col-md-6 col-lg-4">
+			<section id="section-2">
+				<h2>
+					Beef
+				</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at congue urna, sit amet malesuada elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec suscipit ultricies rhoncus. Aenean sapien magna, euismod ornare metus eu, accumsan scelerisque tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus pretium lorem quis nisi dignissim, ac malesuada mauris consequat. Phasellus volutpat eu risus eget porttitor. Cras quis urna quam. Mauris sed placerat lectus, in luctus magna. Integer sagittis sollicitudin cursus. Nullam eu ultrices tortor.
+				</p>
+			</section>
+		</div>
+		<div class="col-sm-12 col-md-12 col-lg-4">
+			<section id="section-3">
+				<h2>
+					Sushi
+				</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at congue urna, sit amet malesuada elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec suscipit ultricies rhoncus. Aenean sapien magna, euismod ornare metus eu, accumsan scelerisque tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus pretium lorem quis nisi dignissim, ac malesuada mauris consequat. Phasellus volutpat eu risus eget porttitor. Cras quis urna quam. Mauris sed placerat lectus, in luctus magna. Integer sagittis sollicitudin cursus. Nullam eu ultrices tortor.
+				</p>
+			</section>
+		</div>
+	</div>
+</body>
+</html>
